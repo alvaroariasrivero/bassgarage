@@ -6,5 +6,11 @@ const bigPic = document.getElementById('bigPic');
 console.log(bigPic)
 
 const selectPic = () => {
-    console.log(littlePics.src);
+    for(let i = 0; i < littlePics.length; i++){
+        littlePics[i].addEventListener('click', function(){
+            console.log(littlePics[i].src)
+        })
+    }
 };
+
+selectPic()
