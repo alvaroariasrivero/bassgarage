@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiftyx</title>
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
@@ -35,10 +36,10 @@
     </header>
     <main>
         <section>
-            <div>
+            <div id="card">
                 <div>
                     <img src="./assets/image1.jpg" alt="bigImage" id="bigPic">
-                    <div>
+                    <div class="gallery">
                         <img src="./assets/image1.jpg" alt="image1" class="little">
                         <img src="./assets/image2.jpg" alt="image2" class="little">
                         <img src="./assets/image3.jpg" alt="image3" class="little">
@@ -54,16 +55,18 @@
                         <li>Diapasón de arce</li>
                         <li>Fabricado en Estados Unidos</li>
                     </ul>
-                    <a href="https://www.fender.com/es-ES/electric-basses/precision-bass/american-professional-ii-precision-bass/0193930755.html">Ver más información</a>
-                    <div>
-                        <p>Pastillas</p>
-                        <p>Fender V-Mod II Single-Coil Precision Bass</p>
-                        <p>Pasivo</p>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                        <p>Miami Blue</p>
-                        <p>Golpeador en caparazón de tortuga</p>
+                    <a href="https://www.fender.com/es-ES/electric-basses/precision-bass/american-professional-ii-precision-bass/0193930755.html" target="_blank">Ver más información</a>
+                    <div class="data">
+                        <div>
+                            <p>Pastillas</p>
+                            <p>Fender V-Mod II Single-Coil Precision Bass</p>
+                            <p>Pasivo</p>
+                        </div>
+                        <div>
+                            <p>Color</p>
+                            <p>Miami Blue</p>
+                            <p>Golpeador en caparazón de tortuga</p>
+                        </div>
                     </div>
                     <form onsubmit="payPurchase(event)">
                         <label for="">Cantidad</label>
@@ -73,43 +76,41 @@
                     </form>
                     <div>
                         <p>Págalo en 3 cuotas <b>sin intereses</b></p>
-                        <a href="https://youtu.be/wQMRJ5AqSWg">Escúchalo tú mismo &#x27A4;</a>
+                        <a href="https://youtu.be/wQMRJ5AqSWg" target="_blank">Escúchalo tú mismo &#x27A4;</a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <h3>Comprados juntos habitualmente</h3>
-            <p>Comprueba los artículos para añadir a la cesta o seleccionar todo</p>
-            <div>
-                <div>
-                    <img src="./assets/fender-accesorios-cable-glow-55-mt-naranja.jpg" alt="fender-accesorios-cable-glow-55-mt-naranja">
+            <div class="addons">
+                <div class="card">
+                    <div>
+                        <img src="./assets/fender-accesorios-cable-glow-55-mt-naranja.jpg" alt="fender-accesorios-cable-glow-55-mt-naranja">
+                    </div>
+                    <div>
+                        <p>FENDER ACCESORIOS CABLE GLOW 5,5 MT NARANJA</p>
+                        <p>20,00 €</p>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox">
-                    <p>FENDER ACCESORIOS CABLE GLOW 5,5 MT NARANJA</p>
-                    <p>20,00 €</p>
+                <div class="card">
+                    <div>
+                        <img src="./assets/ebs-multicomp-blue-label.jpg" alt="ebs-multicomp-blue-label">
+                    </div>
+                    <div>
+                        <p>EBS MULTICOMP BLUE LABEL</p>
+                        <p>175,00 €</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./assets/ebs-multicomp-blue-label.jpg" alt="ebs-multicomp-blue-label">
+                <div class="card">
+                    <div>
+                        <img src="./assets/markbass-mini-cmd-121p-iv.jpg" alt="markbass-mini-cmd-121p-iv">
+                    </div>
+                    <div>
+                        <p>MARKBASS MINI CMD 121P IV</p>
+                        <p>795,00 €</p>
                 </div>
-                <div>
-                    <input type="checkbox">
-                    <p>EBS MULTICOMP BLUE LABEL</p>
-                    <p>175,00 €</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./assets/markbass-mini-cmd-121p-iv.jpg" alt="markbass-mini-cmd-121p-iv">
-                </div>
-                <div>
-                    <input type="checkbox">
-                    <p>MARKBASS MINI CMD 121P IV</p>
-                    <p>795,00 €</p>
-                </div>
+                
             </div>
         </section>
         <section>

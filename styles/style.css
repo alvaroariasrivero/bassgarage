@@ -1,0 +1,38 @@
+#card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#bigPic{
+    width: 400px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.little{
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+}
+
+.addons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 25%;
+}
+
+.card > div > img{
+    width: 100%;
+}
