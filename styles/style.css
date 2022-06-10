@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #bigPic{
@@ -22,6 +23,7 @@
 .data{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .addons{
@@ -35,4 +37,25 @@
 
 .card > div > img{
     width: 100%;
+}
+
+nav{
+    width: 80%;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+#top-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+#logo{
+    width: 15%;
 }
