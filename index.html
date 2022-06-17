@@ -7,6 +7,7 @@
     <title>Fiftyx</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -15,21 +16,38 @@
         </div>
         <div>
             <a href="#">SOPORTE</a>
-            <p>EPAÑA(ES)&#x2B9F;</p>
+            <p>EPAÑA(ES)<i class="fa fa-caret-down"></i></p>
         </div>
         <div>
-            <a href="#">Iniciar sesión &#x1F512;</a>
+            <a href="#">Iniciar sesión <i class="fa fa-lock"></i></a>
         </div>
         <div id="top-menu">
             <img src="" alt="logo" id="logo">
             <nav>
                 <ul>
-                    <li>Bajos nuevos &#x1F893;</li>
-                    <li>Bajos usados &#x1F893;</li>
-                    <li>Amplificación &#x1F893;</li>
-                    <li>Efectos y previos &#x1F893;</li>
-                    <li>Accesorios &#x1F893;</li>
-                    <li>Ofertas &#x1F893;</li>
+                    <div class="dropdown">
+                        <li class="droptxt">Bajos nuevos <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div>
+                        <li>Bajos usados <i class="fa fa-caret-down"></i></li>
+                    </div>
+                    <div>
+                        <li>Amplificación <i class="fa fa-caret-down"></i></li>
+                    </div>
+                    <div>
+                        <li>Efectos y previos <i class="fa fa-caret-down"></i></li>
+                    </div>
+                    <div>
+                        <li>Accesorios <i class="fa fa-caret-down"></i></li>
+                    </div>
+                    <div>
+                        <li>Ofertas <i class="fa fa-caret-down"></i></li>
+                    </div>
                 </ul>
             </nav>
         </div>
