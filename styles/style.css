@@ -1,0 +1,61 @@
+#card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#bigPic{
+    width: 400px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.little{
+    width: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.addons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 25%;
+}
+
+.card > div > img{
+    width: 100%;
+}
+
+nav{
+    width: 80%;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+#top-menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+#logo{
+    width: 15%;
+}
