@@ -65,6 +65,14 @@ nav > ul{
     height: 36px;
 }
 
+.dropdown li{
+    transform: translateY(50%);
+}
+
+.dropdown a{
+    transform: translateY(50%);
+}
+
 .dropdown:hover{
     cursor: pointer;
     background-color: #ED6E00;
@@ -77,6 +85,7 @@ nav > ul{
     min-width: 10rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transform: translateY(17.5px);
 }
 
 .dropdown:hover .dropdown-content {
@@ -90,6 +99,7 @@ nav > ul{
     text-decoration: none;
     display: block;
     text-align: left;
+    transform: initial;
 }
 
 #top-menu{
