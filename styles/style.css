@@ -23,6 +23,16 @@ a{
     flex-direction: row;
 }
 
+.blackie{
+    background-color: rgb(7, 3, 3);
+}
+
+.support{
+    color: #f9f9f9;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .little{
     width: 100px;
     border: 1px solid black;
