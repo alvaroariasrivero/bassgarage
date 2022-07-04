@@ -19,20 +19,22 @@ const totalPrice = () => {
 
 const payPurchase = (event) => {
     event.preventDefault();
-    cart.innerHTML = `<h4>El precio total son ${quantity.value * 2.388}€, muchas gracias por su compra</h4>
+    if(quantity.value > 0){
+        cart.innerHTML = `<h4>El precio total son ${quantity.value * 2.388}€, muchas gracias por su compra</h4>
                     <div class="purchase">
                         <button class="orange-button return" onclick="continueBuying()">Continuar comprando</button>
                         <button class="orange-button return" onclick="location.href = '#';">Pagar la compra</button>
                     </div>
                     <h4>¡Vuelva pronto!</h4>`;
-    disabled.style.display = 'block';
-    cart.style.display = 'block';
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    // if any scroll is attempted, set this to the previous value
-    window.onscroll = function() {
-        window.scrollTo(scrollLeft, scrollTop);
-    };
+        disabled.style.display = 'block';
+        cart.style.display = 'block';
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+    }
 };
 
 const continueBuying = () => {
