@@ -212,3 +212,10 @@ footer{
     margin-top: 2rem;
     padding: 1rem;
 }
+
+#cart{
+    display: none;
+    width: 60%;
+    height: 300px;
+    background-color: #fdfdfd;
+}
