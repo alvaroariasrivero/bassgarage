@@ -1,6 +1,7 @@
 const littlePics = document.getElementsByClassName("little");
 const price = document.getElementById('price');
 const quantity = document.getElementById('quantity');
+const cart = document.getElementById('cart');
 
 const selectPic = () => {
     for(let i = 0; i < littlePics.length; i++){
@@ -17,8 +18,9 @@ const totalPrice = () => {
 
 const payPurchase = (event) => {
     event.preventDefault();
-    alert(`El precio total son ${quantity.value * 2.388}€, muchas gracias por su compra`)
-    console.log(price.innerText);
+    cart.innerText = `El precio total son ${quantity.value * 2.388}€, muchas gracias por su compra`;
+    // cart.style.position = 'absolute'
+    cart.style.display = 'block'
 };
 
 selectPic();
