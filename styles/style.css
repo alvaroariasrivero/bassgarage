@@ -172,6 +172,22 @@ nav > ul{
     background-color: #fdfdfd;
 }
 
+.orange-button{
+    background-color: #ED6E00;
+    color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.orange-button:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.return{
+    height: 2rem;
+}
+
 #top-menu{
     display: flex;
     justify-content: space-evenly;
@@ -194,17 +210,6 @@ nav > ul{
     width: 15%;
 }
 
-#add-to-cart{
-    background-color: #ED6E00;
-    color: #f9f9f9;
-    border: none;
-    cursor: pointer;
-}
-
-#add-to-cart:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -213,9 +218,36 @@ footer{
     padding: 1rem;
 }
 
+#disabled{
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 34, 30, 0.708)
+}
+
 #cart{
     display: none;
     width: 60%;
     height: 300px;
     background-color: #fdfdfd;
+    position: absolute; 
+    left: 25%; 
+    top: 25%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.purchase{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
 }
