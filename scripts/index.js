@@ -21,11 +21,10 @@ const payPurchase = (event) => {
     event.preventDefault();
     cart.innerHTML = `<h4>El precio total son ${quantity.value * 2.388}€, muchas gracias por su compra</h4>
                     <div class="purchase">
-                        <button class="orange-button return">Continuar comprando</button>
-                        <button class="orange-button return">Pagar la compra</button>
+                        <button class="orange-button return" onclick="continueBuying()">Continuar comprando</button>
+                        <button class="orange-button return" onclick="location.href = '#';">Pagar la compra</button>
                     </div>
                     <h4>¡Vuelva pronto!</h4>`;
-    // cart.style.position = 'absolute'
     disabled.style.display = 'block';
     cart.style.display = 'block';
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -35,5 +34,12 @@ const payPurchase = (event) => {
         window.scrollTo(scrollLeft, scrollTop);
     };
 };
+
+const continueBuying = () => {
+    disabled.style.display = 'none';
+    cart.style.display = 'none';
+    //enable scroll
+    window.onscroll = function() {};
+}
 
 selectPic();
