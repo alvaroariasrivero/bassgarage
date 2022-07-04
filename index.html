@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="blackie">
             <p class="support">ENVÍOS Y DEVOLUCIONES GRATUITAS. ENTREGA EN 7 DÍAS LABORALES</p>
         </div>
-        <div class="blackie">
-            <a href="#">SOPORTE</a>
-            <p class="support">EPAÑA(ES)<i class="fa fa-caret-down"></i></p>
+        <div class="blackie dropdown language">
+            <p class="support droptxt">LANGUAGE<i class="fa fa-caret-down"></i></p>
+            <div class="dropdown-container">
+                <div class="dropdown-content drop-rihgt">
+                    <p>ESPAÑOL(ES)</p>
+                    <p>ENGLISH(EN)</p>
+                </div>
+            </div>
         </div>
         <div class="blackie">
-            <a href="#">Iniciar sesión <i class="fa fa-lock"></i></a>
+            <a href="#">Login <i class="fa fa-lock"></i></a>
         </div>
         <div id="top-menu">
             <h1>BassGarage</h1>
             <nav>
                 <ul>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li class="droptxt">BAJOS NUEVOS <i class="fa fa-caret-down"></i></li>
                         <div class="dropdown-content">
                             <a href="#">BAJOS 4 CUERDAS</a>
@@ -36,10 +42,10 @@
                             <a href="#">BAJOS ZURDOS</a>
                         </div>
                     </div>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li><a href="#">BAJOS USADOS</a></li>
                     </div>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li class="droptxt">AMPLIFICACIÓN <i class="fa fa-caret-down"></i></li>
                         <div class="dropdown-content">
                             <a href="#">COMBOS</a>
@@ -47,10 +53,10 @@
                             <a href="#">PANTALLAS</a>
                         </div>
                     </div>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li><a href="#">EFECTOS Y PREVIOS</a></li>
                     </div>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li>ACCESORIOS <i class="fa fa-caret-down"></i></li>
                         <div class="dropdown-content">
                             <a href="#">ADAPTADORES DE CORRIENTE</a>
@@ -64,7 +70,7 @@
                             <a href="#">VARIOS</a>
                         </div>
                     </div>
-                    <div class="dropdown">
+                    <div class="orange dropdown">
                         <li><a href="#">OFERTAS</a></li>
                     </div>
                 </ul>
@@ -94,13 +100,13 @@
                     </ul>
                     <a href="https://www.fender.com/es-ES/electric-basses/precision-bass/american-professional-ii-precision-bass/0193930755.html" target="_blank">Ver más información</a>
                     <div class="data">
-                        <div>
-                            <p>Pastillas</p>
+                        <div class="pickup characteristic">
+                            <p><b>Pastillas:</b></p>
                             <p>Fender V-Mod II Single-Coil Precision Bass</p>
                             <p>Pasivo</p>
                         </div>
-                        <div>
-                            <p>Color</p>
+                        <div class="characteristic">
+                            <p><b>Color:</b></p>
                             <p>Miami Blue</p>
                             <p>Golpeador en caparazón de tortuga</p>
                         </div>
@@ -109,7 +115,7 @@
                         <label for="">Cantidad</label>
                         <input type="number" value="1" id="quantity" min="0" max="4" onchange="totalPrice()">
                         <p id="price">Total 2.388€</p>
-                        <input type="submit" value="Añadir al carrito"/>
+                        <input id="add-to-cart" type="submit" value="Añadir al carrito"/>
                     </form>
                     <div>
                         <p>Págalo en 3 cuotas <b>sin intereses</b></p>
