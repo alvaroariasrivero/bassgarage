@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BassGarage</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="blackie">
+            <p class="support">ENVÍOS Y DEVOLUCIONES GRATUITAS. ENTREGA EN 7 DÍAS LABORALES</p>
+        </div>
+        <div class="blackie dropdown language">
+            <p class="support droptxt">LANGUAGE<i class="fa fa-caret-down"></i></p>
+            <div class="dropdown-container">
+                <div class="dropdown-content drop-rihgt">
+                    <p>ESPAÑOL(ES)</p>
+                    <p>ENGLISH(EN)</p>
+                </div>
+            </div>
+        </div>
+        <div class="blackie">
+            <a href="#">Login <i class="fa fa-lock"></i></a>
+        </div>
+        <div id="top-menu">
+            <h1>BassGarage</h1>
+            <nav>
+                <ul>
+                    <div class="orange dropdown">
+                        <li class="droptxt">BAJOS NUEVOS <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <a href="#">BAJOS 4 CUERDAS</a>
+                            <a href="#">BAJOS 5 CUERDAS</a>
+                            <a href="#">BAJOS 6 CUERDAS</a>
+                            <a href="#">BAJOS FRETLESS</a>
+                            <a href="#">BAJOS ACÚSTICOS</a>
+                            <a href="#">BAJOS ZURDOS</a>
+                        </div>
+                    </div>
+                    <div class="orange dropdown">
+                        <li><a href="#">BAJOS USADOS</a></li>
+                    </div>
+                    <div class="orange dropdown">
+                        <li class="droptxt">AMPLIFICACIÓN <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <a href="#">COMBOS</a>
+                            <a href="#">CABEZALES</a>
+                            <a href="#">PANTALLAS</a>
+                        </div>
+                    </div>
+                    <div class="orange dropdown">
+                        <li><a href="#">EFECTOS Y PREVIOS</a></li>
+                    </div>
+                    <div class="orange dropdown">
+                        <li>ACCESORIOS <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <a href="#">ADAPTADORES DE CORRIENTE</a>
+                            <a href="#">AFINADORES</a>
+                            <a href="#">CABLES</a>
+                            <a href="#">CORREAS</a>
+                            <a href="#">CUERDAS</a>
+                            <a href="#">FUNDAS Y ESTUCHES</a>
+                            <a href="#">INALÁMBRICOS</a>
+                            <a href="#">PASTILLAS</a>
+                            <a href="#">VARIOS</a>
+                        </div>
+                    </div>
+                    <div class="orange dropdown">
+                        <li><a href="#">OFERTAS</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="disabled"><div id="cart"></div></div>
+        <section>
+            <div id="card">
+                <div>
+                    <img src="./assets/image1.jpg" alt="bigImage" id="bigPic">
+                    <div class="gallery">
+                        <img src="./assets/image1.jpg" alt="image1" class="little">
+                        <img src="./assets/image2.jpg" alt="image2" class="little">
+                        <img src="./assets/image3.jpg" alt="image3" class="little">
+                        <img src="./assets/image4.jpg" alt="image4" class="little">
+                    </div>
+                </div>
+                <div>
+                    <h3 id="product-title">FENDER AMERICAN PROFESSIONAL II PRECISION BASS MN OWH</h3>
+                    <p></p>
+                    <ul>
+                        <li>Cuerpo de aliso</li>
+                        <li>Mástil de arce</li>
+                        <li>Diapasón de arce</li>
+                        <li>Fabricado en Estados Unidos</li>
+                    </ul>
+                    <a href="https://www.fender.com/es-ES/electric-basses/precision-bass/american-professional-ii-precision-bass/0193930755.html" target="_blank">Ver más información</a>
+                    <div class="data">
+                        <div class="pickup characteristic">
+                            <p><b>Pastillas:</b></p>
+                            <p>Fender V-Mod II Single-Coil Precision Bass</p>
+                            <p>Pasivo</p>
+                        </div>
+                        <div class="characteristic">
+                            <p><b>Color:</b></p>
+                            <p>Miami Blue</p>
+                            <p>Golpeador en caparazón de tortuga</p>
+                        </div>
+                    </div>
+                    <form onsubmit="payPurchase(event)">
+                        <label for="">Cantidad</label>
+                        <input type="number" value="1" id="quantity" min="0" max="4" onchange="totalPrice()">
+                        <p>Total <span id="price"></span>€</p>
+                        <input id="add-to-cart" class="orange-button" type="submit" value="Añadir al carrito"/>
+                    </form>
+                    <div>
+                        <p>Págalo en 3 cuotas <b>sin intereses</b></p>
+                        <a href="https://youtu.be/wQMRJ5AqSWg" target="_blank">Escúchalo tú mismo &#x27A4;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="together">Comprados juntos habitualmente</h3>
+            <div class="addons">
+                <div class="card">
+                    <div>
+                        <img src="./assets/fender-accesorios-cable-glow-55-mt-naranja.jpg" alt="fender-accesorios-cable-glow-55-mt-naranja">
+                    </div>
+                    <div>
+                        <p>FENDER ACCESORIOS CABLE GLOW 5,5 MT NARANJA</p>
+                        <p>20,00 €</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./assets/ebs-multicomp-blue-label.jpg" alt="ebs-multicomp-blue-label">
+                    </div>
+                    <div>
+                        <p>EBS MULTICOMP BLUE LABEL</p>
+                        <p>175,00 €</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./assets/markbass-mini-cmd-121p-iv.jpg" alt="markbass-mini-cmd-121p-iv">
+                    </div>
+                    <div>
+                        <p>MARKBASS MINI CMD 121P IV</p>
+                        <p>795,00 €</p>
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <a href="#">Opiniones</a>
+            <a href="#">Más información</a>
+            <a href="#">Detalles</a>
+        </footer>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
