@@ -256,3 +256,28 @@ footer{
 .together{
     text-align: center;
 }
+
+.bill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ED6E00;
+}
+
+.flex-item{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-item + .flex-item {
+    border-left: solid 1px #ED6E00;
+}
+
+.total-price{
+    text-align: end;
+}
